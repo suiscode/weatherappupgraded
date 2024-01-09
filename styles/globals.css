@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.border-gradient-black-white {
+  content: "";
+  position: absolute;
+  border: 2px solid;
+  border-image: linear-gradient(to right, black 0%, black 50%, white 50%, white 100%);
+  border-image-slice: 1;
+  border-radius: 50%;
+}
