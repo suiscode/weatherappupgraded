@@ -17,7 +17,7 @@ function Card({dateColor,locationColor, bgSet, image, location, temp, weatherSta
 
 
   return (
-    <div className={`text-black w-[410px] h-[740px] ${fullBgColor}  rounded-[48px] overflow-hidden border-[8px] ${bgSet ? 'border-black' : 'border-white'} border-opacity-20`}>
+    <div className={`text-black w-[410px] z-10 h-[740px] ${fullBgColor}  rounded-[48px] overflow-hidden border-[8px] ${bgSet ? 'border-black' : 'border-white'} border-opacity-20 mt-[120px]`}>
       <div className={`${firstgardient} h-[504px] px-12 py-10 flex flex-col relative items-center gap-[120px]`}>
         <div className="flex justify-between w-full">
           <div className="flex flex-col">
@@ -41,7 +41,7 @@ function Card({dateColor,locationColor, bgSet, image, location, temp, weatherSta
         />
       </div>
       <div className="flex flex-col px-12 mt-[-120px]">
-        <h1 className={`${bgSet ? `tempbgdark` : 'tempbgwhite'} text-[144px] font-extrabold`}>{temp}°</h1>
+        <h1 className={`${bgSet ? `tempbgdark` : 'tempbgwhite'} text-[120px] font-extrabold`}>{temp}°</h1>
 
 <p className={`text-[24px] font-extrabold ${bgSet ?`text-[#777CCE]` : `text-[#FF8E27]`} mt-[-20px]`}>{weatherStatus[0].main}</p>
 
